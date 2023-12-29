@@ -12,8 +12,8 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
 
   function toIngForm(type) {
     switch(type) {
-      case 'create':
-        return 'creating';
+      case 'Create':
+        return 'Creating';
       default:
         return `${type}ing`;
     }
