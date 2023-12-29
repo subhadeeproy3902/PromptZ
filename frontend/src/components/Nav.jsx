@@ -64,8 +64,8 @@ const Nav = () => {
       {/*Mobile Nav*/}
       <div className='sm:hidden flex relative'>
         {user ? (
-          <div className='flex'>
-            <img src={user.photoURL} width={37} className='rounded-full object-contain' height={37} alt="" onClick={() => setToggleDropdown((prev) => !prev)} />
+          <div className='flex gap-2'>
+            <h1 className="text-md mt-[0.3rem] animate-ping">👉</h1> <img src={user.photoURL} width={37} className='rounded-full object-contain' height={37} alt="" onClick={() => setToggleDropdown((prev) => !prev)} />
 
             {toggleDropdown && (
               <div className='dropdown'>
