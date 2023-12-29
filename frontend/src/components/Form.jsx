@@ -10,6 +10,15 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
   }
 
 
+  function toIngForm(type) {
+    switch(type) {
+      case 'create':
+        return 'creating';
+      default:
+        return `${type}ing`;
+    }
+  }
+
   return (
     <section className='w-full max-w-full flex-start flex-col'>
       <h1 className='head_text text-left'>
@@ -66,7 +75,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
               disabled={submitting}
               className='px-5 py-1.5 text-sm bg-violet-500 hover:bg-violet-600 rounded-full text-white'
             >
-              {submitting ? `${type}ing...` : type}
+              {submitting ? toIngForm(type) : type}
             </button>
           </div>
         </form>
