@@ -1,0 +1,2 @@
+GET http://localhost:8080/api/getuserprompts/broy97343@gmail.com
+Content-Type: application/json
