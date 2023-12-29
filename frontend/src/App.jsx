@@ -22,7 +22,6 @@ function App() {
 
   return (
     <>
-    <div className="fixed right-2 bottom-2 font-medium z-10 mx-auto flex w-auto items-center justify-center rounded border py-1.5 px-2.5 text-xs border-zinc-200 bg-purple-300/50 backdrop-blur text-zinc-800 sm:right-8 sm:bottom-6">Made by<a href="https://github.com/subhadeeproy3902" className="ml-1 font-semibold text-zinc-900" target="_blank" rel="noopener noreferrer">Subhadeep</a></div>
       <div className='main'>
         <div className='gradient' />
       </div>
